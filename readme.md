@@ -30,4 +30,4 @@ This challenge was available at https://www.devchallenge.com.br/challenges/5fb5b
 
 💻 Result:
 
-![Preview page GIF](./img/preview.gif)
+![Preview page GIF](./img/preview2.gif)
