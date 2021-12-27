@@ -105,36 +105,35 @@ main {
 }
 
 .second-content {
-  display: flex;
-  align-items: center;
-  flex-flow: column;
-  margin-top: 110px;
-  justify-content: space-evenly;
-  width: 98vw;
-  max-width: 2550px;
+  display: block;
+  text-align: center;
 }
 
 .second-subtitle {
   font-size: 5rem;
   margin-bottom: 50px;
+  text-align: center;
 }
 
 .second-subtitle span {
   color: #6C63FF;
 }
 
-.second-content-text {
+#form {
   display: flex;
-  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 100%;
+  max-width: 1020px;
   align-items: center;
-  gap: 35px;
 }
 
-.second-content-text ul {
-  justify-content: space-between;
+.second-content-form {
+  margin-right: 20px;
 }
 
-.second-content-text ul li {
+#how-many, #how-long, #email {
   background: #FFFFFF;
   border: 3px solid #6C63FF;
   box-sizing: border-box;
@@ -144,13 +143,13 @@ main {
   padding: 10px;
   font-weight: bold;
   font-size: 2.5rem;
-  margin: 55px 0;
+  margin: 25px 0;
   height: 70px;
   width: 100%;
-  max-width: 502px;
+  max-width: 400px;
 }
 
-.second-content-text-principal{
+#message {
   border: 1px solid #000000;
   box-sizing: border-box;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -163,6 +162,9 @@ main {
   text-align: center;
   padding: 30px;
   font-weight: bold;
+  font-family: Poppins;
+  font-style: normal;
+  float: right;
 }
 
 .button {
@@ -174,6 +176,7 @@ main {
   font-size: 3rem;
   font-weight: bold;
   margin-top: 50px;
+  float: initial;
 }
 
 footer {
@@ -242,15 +245,23 @@ footer {
     height: 300px;
   }
 
-  .second-content-text-principal {
-    display: none;
+  .second-content {
+    align-items: center;
   }
 
-  .second-content-text ul li {
-    width: 340px;
-    margin-top: 50px ;
-    text-align: left;
-  }  
+  #form {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .second-content-form {
+    margin-bottom: 30px;
+  }
+
+  #message {
+    margin: auto;
+    float: center;
+  }
 
 
 }
@@ -305,16 +316,27 @@ footer {
     align-items: center;
   }
 
-  .second-content-text-principal {
-    display: none;
+  .second-content {
+    align-items: center;
   }
 
-  .second-content-text ul li {
-    width: 340px;
-    margin-top: 50px ;
-    text-align: left;
-    font-size: 3rem;
-  }  
+  #form {
+    flex-wrap: wrap;
+    align-items: center;  
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .second-content-form {
+    margin-bottom: 30px;
+  }
+
+  #message {
+    margin: auto;
+    float: center;
+  }
+
+
 
   .button {
     width: 180px;
@@ -386,20 +408,28 @@ footer {
     align-items: center;
   }
 
-  .second-content-text-principal {
-    display: none;
+  .second-content {
+    align-items: center;
   }
 
-  .second-content-text ul li {
-    align-items: center;
-    width: 300px;
-    margin-top: 50px ;
-    text-align: left;
-    font-size: 3rem;
-  }  
+  #form {
+    flex-wrap: wrap;
+    align-items: center;  
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .second-content-form {
+    margin-bottom: 40px;
+  }
+
+  #message {
+    margin: auto;
+    float: center;
+  }
 
   .button {
-    margin-top: 10px;
+    margin-top: 30px;
     width: 222px;
     font-size: 3rem;
   }
